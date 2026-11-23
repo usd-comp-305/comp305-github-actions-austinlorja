@@ -25,4 +25,9 @@ public class StringUtilsTest {
                 "eip top nekcihc",
                 StringUtils.reverseString("chicken pot pie"));
     }
+
+    @Test
+    void returnsPalindrome() {
+        assertEquals("racecar", StringUtils.reverseString("racecar"));
+    }
 }
