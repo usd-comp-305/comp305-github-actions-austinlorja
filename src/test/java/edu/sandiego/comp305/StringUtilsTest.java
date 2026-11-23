@@ -8,4 +8,9 @@ public class StringUtilsTest {
     void returnsReversedHello() {
         assertEquals("olleh", StringUtils.reverseString("hello"));
     }
+
+    @Test
+    void returnsEmptyString() {
+        assertEquals("", StringUtils.reverseString(""));
+    }
 }
