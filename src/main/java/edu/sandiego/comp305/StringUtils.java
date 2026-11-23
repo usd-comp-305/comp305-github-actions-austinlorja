@@ -2,7 +2,9 @@ package edu.sandiego.comp305;
 
 public class StringUtils {
 
-    public static String reverseString(String word) {
+    private StringUtils() {}
+
+    public static String reverseString(final String word) {
         return new StringBuilder(word).reverse().toString();
     }
 }
