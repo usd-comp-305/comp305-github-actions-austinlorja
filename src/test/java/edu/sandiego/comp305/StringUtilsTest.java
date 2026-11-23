@@ -13,4 +13,9 @@ public class StringUtilsTest {
     void returnsEmptyString() {
         assertEquals("", StringUtils.reverseString(""));
     }
+
+    @Test
+    void returnsSingleCharacter() {
+        assertEquals("a", StringUtils.reverseString("a"));
+    }
 }
