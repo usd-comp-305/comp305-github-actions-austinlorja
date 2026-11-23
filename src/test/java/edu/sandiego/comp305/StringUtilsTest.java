@@ -18,4 +18,11 @@ public class StringUtilsTest {
     void returnsSingleCharacter() {
         assertEquals("a", StringUtils.reverseString("a"));
     }
+
+    @Test
+    void returnsReversedStringWithSpaces() {
+        assertEquals(
+                "eip top nekcihc",
+                StringUtils.reverseString("chicken pot pie"));
+    }
 }
